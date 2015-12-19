@@ -6,5 +6,3 @@ TEMPLATE_URL="https://raw.githubusercontent.com/github/gitignore/master/${TEMPLA
 FILE_NAME=".gitignore"
 
 curl --output ${FILE_NAME} ${TEMPLATE_URL}
-
-# vim:set ft=sh
