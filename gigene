@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# ^を付けることで先頭を大文字にする
+TEMPLATE_NAME=${1^}
+TEMPLATE_URL="https://raw.githubusercontent.com/github/gitignore/master/${TEMPLATE_NAME}.gitignore"
+FILE_NAME=".gitignore"
+
+curl --output ${FILE_NAME} ${TEMPLATE_URL}
+
+# vim:set ft=sh
